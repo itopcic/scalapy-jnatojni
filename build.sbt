@@ -253,3 +253,8 @@ lazy val bench = crossProject(JVMPlatform, NativePlatform)
 
 lazy val benchJVM = bench.jvm
 lazy val benchNative = bench.native
+
+enablePlugins(JniNative)
+nativeCompile / sourceDirectory := baseDirectory.value / "core/jvm/target/native"
+nativeCompile / target := baseDirectory.value / "core/jvm/target/native" / nativePlatform.value
+

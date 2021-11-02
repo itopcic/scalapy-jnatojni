@@ -11,3 +11,5 @@ addSbtPlugin("com.dwijnand" % "sbt-dynver" % "4.1.1")
 addSbtPlugin("org.scalameta" % "sbt-mdoc" % "2.2.23")
 
 addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.15.0")
+
+addSbtPlugin("com.github.sbt" % "sbt-jni" % "1.5.3")
